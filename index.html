@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dr. Ênio Sales Oliveira - Advogado Criminalista</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1e3a5f;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    section h2 {
+      color: #1e3a5f;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    .about p {
+      font-size: 1.1rem;
+    }
+
+    .services ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .services li {
+      background: #e0e7ff;
+      margin: 0.5rem 0;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .contact input,
+    .contact textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    .contact button {
+      background-color: #1e3a5f;
+      color: white;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact button:hover {
+      background-color: #2c5282;
+    }
+
+    footer {
+      background-color: #1e3a5f;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Dr. Ênio Sales Oliveira </h1>
+    <p>Advogado Criminalista | Defesa Penal | Direito Penal</p>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <section id="sobre" class="about">
+      <h2>Sobre Mim</h2>
+      <p>Dr. Ênio Sales Oliveira  é especializado no Direito Penal e Processo Penal, com atuação em casos de crimes violentos, fraudes, lavagem de dinheiro e outros delitos complexos. Atende todo o território nacional com compromisso, ética e excelência.</p>
+    </section>
+
+    <section id="servicos" class="services">
+      <h2>Serviços</h2>
+      <ul>
+        <li><strong>Defesa Penal:</strong> Representação em inquéritos policiais e processos criminais.</li>
+        <li><strong>Habeas Corpus:</strong> Garantia de direitos fundamentais e liberdade imediata.</li>
+        <li><strong>Audiências de Custódia:</strong> Presença jurídica desde os primeiros momentos.</li>
+        <li><strong>Recursos Jurídicos:</strong> Apelações, embargos e recursos especiais ao STJ e STF.</li>
+        <li><strong>Consultoria Penal:</strong> Orientação prévia em situações de risco penal.</li>
+      </ul>
+    </section>
+
+    <section id="contato" class="contact">
+      <h2>Entre em Contato</h2>
+      <form action="mailto:seuemail@example.com" method="post" enctype="text/plain">
+        <input type="text" name="nome" placeholder="Seu nome" required />
+        <input type="email" name="email" placeholder="Seu email" required />
+        <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar Mensagem</button>
+      </form>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Dr. Ênio Sales Oliveira  - Todos os direitos reservados.</p>
+    <p>Telefone: (11) 99999-9999 | Email: contato@eniosales.com.br</p>
+  </footer>
+
+</body>
+</html>
