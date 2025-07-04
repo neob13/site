@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Ênio Sales Oliveira Advocacia Criminalista</title>
+    <title>Dr. Magnus Advocacia Criminalista</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -16,21 +16,17 @@
             --shadow-dark: rgba(0, 0, 0, 0.3);
             --shadow-gold: rgba(218, 165, 32, 0.2);
         }
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: 'Crimson Text', serif;
             background: linear-gradient(135deg, #2C1810 0%, #1A0F0A 100%);
             color: var(--parchment);
             overflow-x: hidden;
         }
-
-        /* Ornamental Background Pattern */
         body::before {
             content: '';
             position: fixed;
@@ -44,8 +40,6 @@
             pointer-events: none;
             z-index: -1;
         }
-
-        /* Header */
         header {
             position: fixed;
             top: 0;
@@ -57,7 +51,6 @@
             z-index: 1000;
             transition: all 0.3s ease;
         }
-
         nav {
             max-width: 1200px;
             margin: 0 auto;
@@ -66,7 +59,6 @@
             align-items: center;
             padding: 0 2rem;
         }
-
         .logo {
             font-family: 'Cinzel', serif;
             font-size: 1.8rem;
@@ -75,13 +67,11 @@
             text-shadow: 2px 2px 4px var(--shadow-dark);
             letter-spacing: 2px;
         }
-
         .nav-links {
             display: flex;
             gap: 2rem;
             list-style: none;
         }
-
         .nav-links a {
             color: var(--parchment);
             text-decoration: none;
@@ -91,7 +81,6 @@
             padding: 0.5rem 1rem;
             border-radius: 4px;
         }
-
         .nav-links a::before {
             content: '';
             position: absolute;
@@ -103,17 +92,13 @@
             transition: all 0.3s ease;
             transform: translateX(-50%);
         }
-
         .nav-links a:hover {
             color: var(--gold-aged);
             transform: translateY(-2px);
         }
-
         .nav-links a:hover::before {
             width: 100%;
         }
-
-        /* Hero Section */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -123,13 +108,11 @@
             background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
             padding: 6rem 2rem 2rem;
         }
-
         .hero-content {
             max-width: 800px;
             text-align: center;
             z-index: 2;
         }
-
         .hero h1 {
             font-family: 'Cinzel', serif;
             font-size: clamp(2.5rem, 6vw, 4rem);
@@ -140,7 +123,6 @@
             letter-spacing: 3px;
             animation: fadeInUp 1s ease-out;
         }
-
         .hero-subtitle {
             font-size: 1.5rem;
             color: var(--aged-red);
@@ -148,7 +130,6 @@
             font-style: italic;
             animation: fadeInUp 1s ease-out 0.3s both;
         }
-
         .hero-description {
             font-size: 1.2rem;
             line-height: 1.8;
@@ -158,7 +139,6 @@
             margin-right: auto;
             animation: fadeInUp 1s ease-out 0.6s both;
         }
-
         .cta-button {
             display: inline-block;
             background: linear-gradient(45deg, var(--primary-red), var(--aged-red));
@@ -173,20 +153,16 @@
             border: 2px solid var(--gold-aged);
             animation: fadeInUp 1s ease-out 0.9s both;
         }
-
         .cta-button:hover {
             transform: translateY(-3px);
             box-shadow: 0 10px 30px rgba(139, 0, 0, 0.4);
             background: linear-gradient(45deg, var(--aged-red), var(--primary-red));
         }
-
-        /* Sections */
         section {
             padding: 6rem 2rem;
             max-width: 1200px;
             margin: 0 auto;
         }
-
         .section-title {
             font-family: 'Cinzel', serif;
             font-size: 2.5rem;
@@ -195,7 +171,6 @@
             margin-bottom: 3rem;
             position: relative;
         }
-
         .section-title::after {
             content: '';
             position: absolute;
@@ -206,15 +181,12 @@
             background: linear-gradient(to right, var(--primary-red), var(--gold-aged));
             transform: translateX(-50%);
         }
-
-        /* Services Grid */
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
             margin-top: 4rem;
         }
-
         .service-card {
             background: rgba(60, 36, 21, 0.8);
             padding: 2rem;
@@ -225,7 +197,6 @@
             position: relative;
             overflow: hidden;
         }
-
         .service-card::before {
             content: '';
             position: absolute;
@@ -237,17 +208,14 @@
             opacity: 0;
             transition: opacity 0.3s ease;
         }
-
         .service-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 40px rgba(218, 165, 32, 0.2);
             border-color: var(--gold-aged);
         }
-
         .service-card:hover::before {
             opacity: 1;
         }
-
         .service-card h3 {
             font-family: 'Cinzel', serif;
             font-size: 1.4rem;
@@ -256,14 +224,11 @@
             position: relative;
             z-index: 1;
         }
-
         .service-card p {
             line-height: 1.6;
             position: relative;
             z-index: 1;
         }
-
-        /* About Section */
         .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -271,73 +236,60 @@
             align-items: center;
             margin-top: 2rem;
         }
-
         .about-text {
             font-size: 1.1rem;
             line-height: 1.8;
         }
-
         .about-text p {
             margin-bottom: 1.5rem;
         }
-
         .about-image {
             text-align: center;
         }
-
         .scales-icon {
             font-size: 8rem;
             color: var(--gold-aged);
             text-shadow: 3px 3px 6px var(--shadow-dark);
             animation: float 3s ease-in-out infinite;
         }
-
-        /* Contact Section */
         .contact-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
             margin-top: 2rem;
         }
-
         .contact-info {
             background: rgba(60, 36, 21, 0.8);
             padding: 2rem;
             border-radius: 12px;
             border: 2px solid var(--gold-dark);
         }
-
         .contact-info h3 {
             font-family: 'Cinzel', serif;
             color: var(--gold-aged);
             margin-bottom: 1.5rem;
         }
-
         .contact-item {
             margin-bottom: 1rem;
             display: flex;
             align-items: center;
             gap: 1rem;
         }
-
         .contact-form {
             background: rgba(60, 36, 21, 0.8);
             padding: 2rem;
             border-radius: 12px;
             border: 2px solid var(--gold-dark);
         }
-
         .form-group {
             margin-bottom: 1.5rem;
         }
-
         .form-group label {
             display: block;
             margin-bottom: 0.5rem;
             color: var(--gold-aged);
             font-weight: 600;
         }
-
         .form-group input,
         .form-group textarea {
             width: 100%;
@@ -349,36 +301,28 @@
             font-family: inherit;
             transition: border-color 0.3s ease;
         }
-
         .form-group input:focus,
         .form-group textarea:focus {
             outline: none;
             border-color: var(--gold-aged);
         }
-
         .form-group textarea {
             resize: vertical;
             min-height: 100px;
         }
-
-        /* Footer */
         footer {
             background: var(--dark-brown);
             padding: 3rem 2rem 1rem;
             text-align: center;
             border-top: 2px solid var(--gold-aged);
         }
-
         .footer-content {
             max-width: 1200px;
             margin: 0 auto;
         }
-
         .footer-content p {
             margin-bottom: 1rem;
         }
-
-        /* Animations */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -389,40 +333,31 @@
                 transform: translateY(0);
             }
         }
-
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
             50% { transform: translateY(-10px); }
         }
-
-        /* Responsive Design */
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
             }
-            
             .about-content,
             .contact-grid {
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
-            
             .hero h1 {
                 font-size: 2.5rem;
             }
-            
             .services-grid {
                 grid-template-columns: 1fr;
             }
         }
-
-        /* Scroll Animations */
         .fade-in {
             opacity: 0;
             transform: translateY(30px);
             transition: all 0.6s ease;
         }
-
         .fade-in.visible {
             opacity: 1;
             transform: translateY(0);
@@ -430,10 +365,9 @@
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header>
         <nav>
-            <div class="logo">⚖️ Ênio Sales Oliveira</div>
+            <div class="logo">⚖️ MAGNUS</div>
             <ul class="nav-links">
                 <li><a href="#home">Início</a></li>
                 <li><a href="#services">Serviços</a></li>
@@ -442,11 +376,9 @@
             </ul>
         </nav>
     </header>
-
-    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>DR. Ênio Sales Oliveira ADVOCACIA</h1>
+            <h1>DR. MAGNUS ADVOCACIA</h1>
             <p class="hero-subtitle">Criminalista • Filósofo • Pragmático</p>
             <p class="hero-description">
                 A defesa criminal através de uma abordagem que une séculos de sabedoria jurídica 
@@ -456,8 +388,6 @@
             <a href="#contact" class="cta-button">Consulta Especializada</a>
         </div>
     </section>
-
-    <!-- Services Section -->
     <section id="services" class="fade-in">
         <h2 class="section-title">Áreas de Atuação</h2>
         <div class="services-grid">
@@ -479,14 +409,12 @@
             </div>
         </div>
     </section>
-
-    <!-- About Section -->
     <section id="about" class="fade-in">
         <h2 class="section-title">Sobre o Advogado</h2>
         <div class="about-content">
             <div class="about-text">
                 <p>
-                    <strong>Dr. Ênio Sales Oliveira</strong> combina uma formação sólida em Direito Penal com uma abordagem filosófica 
+                    <strong>Dr. Magnus</strong> combina uma formação sólida em Direito Penal com uma abordagem filosófica 
                     única, que busca compreender não apenas as nuances técnicas da lei, mas também os 
                     aspectos humanos e sociais que permeiam cada caso.
                 </p>
@@ -506,8 +434,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Contact Section -->
     <section id="contact" class="fade-in">
         <h2 class="section-title">Contato</h2>
         <div class="contact-grid">
@@ -522,15 +448,15 @@
                 </div>
                 <div class="contact-item">
                     <strong>📞</strong>
-                    <p>(11) 3254-7890</p>
+                    <p><a href=" https://wa.me/551132547890 " target="_blank" style="color: var(--gold-aged); text-decoration: underline;">(11) 3254-7890</a></p>
                 </div>
                 <div class="contact-item">
                     <strong>📱</strong>
-                    <p>(11) 99876-5432</p>
+                    <p><a href="https://wa.me/5511998765432 " target="_blank" style="color: var(--gold-aged); text-decoration: underline;">(11) 99876-5432</a></p>
                 </div>
                 <div class="contact-item">
                     <strong>📧</strong>
-                    <p>contato@drÊnio Sales Oliveira.adv.br</p>
+                    <p><a href="mailto:contato@drmagnus.adv.br" style="color: var(--gold-aged); text-decoration: underline;">contato@drmagnus.adv.br</a></p>
                 </div>
                 <div class="contact-item">
                     <strong>🕐</strong>
@@ -564,31 +490,22 @@
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <p>&copy; 2025 Dr. Ênio Sales Oliveira Advocacia Criminalista. Todos os direitos reservados.</p>
+            <p>&copy; 2025 Dr. Magnus Advocacia Criminalista. Todos os direitos reservados.</p>
             <p>OAB/SP 123.456 | Advocacia com Excelência e Ética</p>
         </div>
     </footer>
-
     <script>
-        // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             });
         });
-
-        // Header scroll effect
         window.addEventListener('scroll', function() {
             const header = document.querySelector('header');
             if (window.scrollY > 100) {
@@ -599,13 +516,10 @@
                 header.style.boxShadow = 'none';
             }
         });
-
-        // Fade-in animation on scroll
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
         };
-
         const observer = new IntersectionObserver(function(entries) {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -613,31 +527,21 @@
                 }
             });
         }, observerOptions);
-
         document.querySelectorAll('.fade-in').forEach(el => {
             observer.observe(el);
         });
-
-        // Form submission handling
         document.querySelector('form').addEventListener('submit', function(e) {
             e.preventDefault();
-            
-            // Get form data
             const formData = new FormData(this);
             const data = Object.fromEntries(formData);
-            
-            // Simple validation
             if (!data.name || !data.email || !data.message) {
                 alert('Por favor, preencha todos os campos obrigatórios.');
                 return;
             }
-            
-            // Simulate form submission
             const button = this.querySelector('button');
             const originalText = button.textContent;
             button.textContent = 'Enviando...';
             button.style.opacity = '0.7';
-            
             setTimeout(() => {
                 alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
                 this.reset();
@@ -645,19 +549,14 @@
                 button.style.opacity = '1';
             }, 2000);
         });
-
-        // Add hover effects to service cards
         document.querySelectorAll('.service-card').forEach(card => {
             card.addEventListener('mouseenter', function() {
                 this.style.transform = 'translateY(-5px) scale(1.02)';
             });
-            
             card.addEventListener('mouseleave', function() {
                 this.style.transform = 'translateY(0) scale(1)';
             });
         });
-
-        // Parallax effect for hero section
         window.addEventListener('scroll', function() {
             const scrolled = window.pageYOffset;
             const hero = document.querySelector('.hero');
